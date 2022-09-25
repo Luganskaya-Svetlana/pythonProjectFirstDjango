@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous">
+
+        {% block head %}
+        {%endblock%}
+        <title>Творческое задание</title>
+    </head>
+    <body style="background-color: #fff8f1">
+        <header>
+            <nav class="navbar navbar-light" style="background-color: pink;">
+                <a class="navbar-brand" href="/"><h3>Творческое задание Луганской Светланы</h3></a>
+            </nav>
+        </header>
+        <main>
+            <h5>Я из Москвы. Увлекаюсь - неожиданно! :) - программированием, а еще танцами, шахматами, древнекитайской игрой го.</h5>
+            <img class="mx-auto d-block" src="{% static 'img/me.jpg' %}" alt="photo" width="500">
+            <h5>Программирую с 6 класса. По школьной программе изучала Pascal и Python, дополнительно занималась в Яндекс.Лицее и успешно его закончила.</h5>
+            <p align="center">P.S. А еще у меня живут две лысые кошки :)</p>
+            <img class="mx-auto d-block" src="{% static 'img/cats.jpg' %}" alt="photo" width="500">
+        </main>
+    </body>
+</html>
